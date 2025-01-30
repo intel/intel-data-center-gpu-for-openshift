@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Information &mdash; Intel® Data Center GPU Driver for OpenShift*</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Developers Guide" href="../debug/README.html" />
+    <link rel="prev" title="Intel® Data Center GPU Driver for OpenShift*" href="../README.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Intel® Data Center GPU Driver for OpenShift*
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Intel® Data Center GPU Driver for OpenShift*</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#naming-convention">Naming Convention</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#driverversion">DriverVersion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernelversion">KernelVersion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#driver-signing">Driver Signing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#releases">Releases</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developers Guide:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../debug/README.html">Developers Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Intel® Data Center GPU Driver for OpenShift*</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Release Information</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/intel/intel-data-center-gpu-driver-for-openshift/blob/main/release/README.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-information">
+<h1>Release Information<a class="headerlink" href="#release-information" title="Permalink to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>Intel Data Center GPU driver container images for OpenShift are Red Hat certified and published on the <a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264">Red Hat Container Catalog</a>. These driver container images are designed to be easily managed by the KMM operator, and they follow the naming convention below.</p>
+<section id="naming-convention">
+<h3>Naming Convention<a class="headerlink" href="#naming-convention" title="Permalink to this heading"></a></h3>
+<p>The driver container images in this repository use the following naming pattern:
+<img alt="driver container image naming pattern" src="../_images/driver-name.png" /></p>
+<section id="driverversion">
+<h4>DriverVersion<a class="headerlink" href="#driverversion" title="Permalink to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">x.y.z</span></code> versioning pattern is used by the driver version.<br />
+<code class="docutils literal notranslate"><span class="pre">x</span></code>: for architecture change or major feature improvement in the driver from the Intel GPU repository.<br />
+<code class="docutils literal notranslate"><span class="pre">y</span></code>: for hot bug fixes or minor feature improvements in the driver from the Intel GPU repository.<br />
+<code class="docutils literal notranslate"><span class="pre">z</span></code>: for any improvement from this project including building or debugging updates.</p>
+</section>
+<section id="kernelversion">
+<h4>KernelVersion<a class="headerlink" href="#kernelversion" title="Permalink to this heading"></a></h4>
+<p>KernelVersion represents the full Red Hat CoreOS* (RHCOS) kernel version.</p>
+</section>
+</section>
+<section id="driver-signing">
+<h3>Driver Signing<a class="headerlink" href="#driver-signing" title="Permalink to this heading"></a></h3>
+<p>The Intel Data Center GPU drivers in the released container images are signed for secure boot. For more details on enrolling the public key to enable secure boot with Red Hat OpenShift Container Platform* (RHOCP), please seek support from Red Hat.</p>
+</section>
+</section>
+<section id="releases">
+<h2>Releases<a class="headerlink" href="#releases" title="Permalink to this heading"></a></h2>
+<p>Please refer to the following table to view the detailed release information for each image.</p>
+<p>The driver containers released support the following Intel GPUs:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.intel.com/content/www/us/en/products/sku/230020/intel-data-center-gpu-flex-140/specifications.html">Intel® Data Center GPU Flex 140</a></p></li>
+<li><p><a class="reference external" href="https://www.intel.com/content/www/us/en/products/sku/230019/intel-data-center-gpu-flex-170/specifications.html">Intel® Data Center GPU Flex 170</a></p></li>
+<li><p><a class="reference external" href="https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/max-series.html">Intel® Data Center GPU Max Series</a> support starting from Driver Version 2.2.0 for RHOCP 4.14.11 and above.</p></li>
+</ul>
+<p><strong>Note</strong>: This release is verified on Intel Data Center GPU Max 1100.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Image</p></th>
+<th class="head"><p>Intel GPU Driver</p></th>
+<th class="head"><p>RHEL Version</p></th>
+<th class="head"><p>RHOCP Version</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.77.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.77.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.25 </br> OCP 4.15.26 </br> OCP 4.15.27 </br> OCP 4.14.34</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.73.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.73.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.21 </br> OCP 4.15.22 </br> OCP 4.14.32 </br> OCP 4.14.33</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.71.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.71.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.19 </br> OCP 4.15.20 </br> OCP 4.14.31</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.69.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.69.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.17 </br> OCP 4.15.18 </br> OCP 4.14.29 </br> OCP 4.14.30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.67.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.67.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.15 </br> OCP 4.15.16 </br> OCP 4.14.28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.66.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.66.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.13 </br> OCP 4.15.14 </br> OCP 4.14.25 </br> OCP 4.14.26 </br> OCP 4.14.27</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.64.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.64.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.11 </br> OCP 4.15.12 </br> OCP 4.14.23 </br> OCP 4.14.24</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.62.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.62.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.10 </br> OCP 4.14.22</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.59.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.59.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.6 </br> OCP 4.15.7 </br> OCP 4.15.8 </br> OCP 4.15.9 </br> OCP 4.14.19 </br> OCP 4.14.20 </br> OCP 4.14.21</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.57.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.57.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.4 </br> OCP 4.15.5 </br> OCP 4.14.18</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.55.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.55.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.1 </br> OCP 4.15.2 </br> OCP 4.15.3 </br> OCP 4.14.15 </br> OCP 4.14.16 </br> OCP 4.14.17</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.54.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.54.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.15.0 </br> OCP 4.14.14</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.52.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.52.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.12 </br> OCP 4.14.13</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.2.0-5.14.0-284.50.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.2.0-5.14.0-284.50.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.11</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.50.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.50.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.11</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.48.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.48.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.9 <br /> OCP 4.14.10</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.45.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.45.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.7 <br /> OCP 4.14.8</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.43.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.43.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.5 <br /> OCP 4.14.6</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.41.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.41.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.3 <br /> OCP 4.14.4</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.40.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.40.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.2</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.1.0-5.14.0-284.36.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.1.0-5.14.0-284.36.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.48 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW51.5_682.48_23.6.42_230425.56">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW49.5_682.48">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.14.0 <br /> OCP 4.14.1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=2.0.0-5.14.0-284.28.1.el9_2.x86_64">intel-data-center-gpu-driver-container:2.0.0-5.14.0-284.28.1.el9_2.x86_64</a></p></td>
+<td><p>Version 682.38 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/I915_23WW39.5_682.38_23.6.37_230425.49">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW39.5_682.38">Firmware</a></p></td>
+<td><p>RHEL 9.2</p></td>
+<td><p>OCP 4.13.10 <br /> OCP 4.13.11</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=1.1.0-4.18.0-372.64.1.el8_6.x86_64">intel-data-center-gpu-driver-container:1.1.0-4.18.0-372.64.1.el8_6.x86_64</a></p></td>
+<td><p>Version 647 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-pmt-backports/tree/23WW28.5_647.21_MAIN">PMT</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/RHEL88_23WW28.5_647.21_23.5.19_230406.22">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW28.5_647.21">Firmware</a></p></td>
+<td><p>RHEL 8.6</p></td>
+<td><p>OCP 4.12.25 <br /> OCP 4.12.26 <br /> OCP 4.12.27 <br /> OCP 4.12.28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264?tag=1.0.0-4.18.0-372.46.1.el8_6.x86_64&amp;amp;push_date=1687547472450">intel-data-center-gpu-driver-container:1.0.0-4.18.0-372.46.1.el8_6.x86_64</a></p></td>
+<td><p>Version 555 <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-pmt-backports/tree/23WW06.5_555_MAIN">PMT</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/RHEL86_23WW6.5_555_6469.0.3_221221.3">i915</a> <br />- <a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware/tree/23WW06.5_555">Firmware</a></p></td>
+<td><p>RHEL 8.6</p></td>
+<td><p>OCP 4.12.6 <br /> OCP 4.12.7</p></td>
+</tr>
+</tbody>
+</table>
+<p>The public key with the signed drivers is distributed <a class="reference download internal" download="" href="../_downloads/94f615c74cde7e9f1737eee96a5dd06a/dgpu_driver_public_key.der"><span class="xref download myst">here</span></a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../README.html" class="btn btn-neutral float-left" title="Intel® Data Center GPU Driver for OpenShift*" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../debug/README.html" class="btn btn-neutral float-right" title="Developers Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Intel® Corporation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

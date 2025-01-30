@@ -1,0 +1,45 @@
+# Copyright (c) 2022 - 2023 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  labels:
+    app: intel-dgpu-deploy-debug
+  name: intel-dgpu-deploy-debug
+  namespace: intel-dgpu-debug
+  annotations:
+    specialresource.openshift.io/wait: "true"
+    specialresource.openshift.io/state: "driver-container"
+    specialresource.openshift.io/driver-container-vendor: intel
+    specialresource.openshift.io/kernel-affine: "true"
+spec:
+  updateStrategy:
+    type: OnDelete
+  selector:
+    matchLabels:
+      app: intel-dgpu-deploy-debug
+  template:
+    metadata:
+      labels:
+        app: intel-dgpu-deploy-debug
+    spec:
+      serviceAccount: intel-dgpu-debug
+      serviceAccountName: intel-dgpu-debug
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/intel-dgpu-debug/intel-dgpu-driver-container-debug:4.18.0-372.40.1.el8_6.x86_64
+        name: intel-dgpu-driver-container-debug
+        imagePullPolicy: Always
+        command: [sleep, infinity]
+        lifecycle:
+          postStart:
+            exec:
+              command: [modprobe, -vd , /opt, i915]
+          preStop:
+            exec:
+              command: ["/bin/sh"]
+        securityContext:
+          privileged: true
+      nodeSelector:
+        intel.feature.node.kubernetes.io/gpu: "true"
+        intel.feature.node.kubernetes.io/dgpu-canary: 'true'

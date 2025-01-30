@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel® Data Center GPU Driver for OpenShift* &mdash; Intel® Data Center GPU Driver for OpenShift*</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Release Information" href="release/README.html" />
+    <link rel="prev" title="Intel® Data Center GPU Driver for OpenShift*" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Intel® Data Center GPU Driver for OpenShift*
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Intel® Data Center GPU Driver for OpenShift*</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-intel-data-center-gpu-driver-on-rhocp">Install Intel Data Center GPU Driver on RHOCP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrade-intel-data-center-gpu-driver-with-rhocp">Upgrade Intel Data Center GPU Driver with RHOCP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#commercial-support-from-red-hat">Commercial Support from Red Hat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-source-community-support">Open-Source Community Support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contribute">Contribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">Code of Conduct</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release/README.html">Release Information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developers Guide:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="debug/README.html">Developers Guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Intel® Data Center GPU Driver for OpenShift*</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Intel® Data Center GPU Driver for OpenShift*</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/intel/intel-data-center-gpu-driver-for-openshift/blob/main/README.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="intel-data-center-gpu-driver-for-openshift">
+<h1>Intel® Data Center GPU Driver for OpenShift*<a class="headerlink" href="#intel-data-center-gpu-driver-for-openshift" title="Permalink to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>The Intel Data Center GPU Driver for OpenShift project focuses on the development, packaging, certification, and release of Intel® Data Center GPU driver container images for the <a class="reference external" href="https://www.redhat.com/en/technologies/cloud-computing/openshift/container-platform">Red Hat OpenShift Container Platform (RHOCP)</a>. This project allows users to leverage the pre-built driver container image to facilitate provisioning of Intel Data Center GPU cards on an OpenShift cluster. Furthermore, users can utilize the Intel Data Center GPU driver dockerfile provided by this project as a reference for constructing their own driver container images on-premises. Intel Data Center GPU driver container images for OpenShift are certified and published on the <a class="reference external" href="https://catalog.redhat.com/software/containers/intel/intel-data-center-gpu-driver-container/6495ee55c8b2461e35fb8264">Red Hat Container Catalog</a>.</p>
+<p>The Intel Data Center GPU driver container image is built from the <a class="reference external" href="https://github.com/intel-gpu">Intel GPU Repository</a>. It includes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/intel-gpu/intel-gpu-i915-backports/tree/backport/main">Intel® Graphics Driver Backports for Linux* OS (i915) for Red Hat Enterprise Linux (RHEL)</a> with Intel® Converged Security Engine (Intel® CSE) and Intel® Platform Monitoring Technology (Intel® PMT) modules</p></li>
+<li><p><a class="reference external" href="https://github.com/intel-gpu/intel-gpu-firmware">Intel® GPU firmware</a></p></li>
+</ul>
+</section>
+<section id="install-intel-data-center-gpu-driver-on-rhocp">
+<h2>Install Intel Data Center GPU Driver on RHOCP<a class="headerlink" href="#install-intel-data-center-gpu-driver-on-rhocp" title="Permalink to this heading"></a></h2>
+<p>We recommend users use the <a class="reference external" href="https://docs.openshift.com/container-platform/4.12/hardware_enablement/kmm-kernel-module-management.html">Kernel Module Management (KMM) operator</a> to install and manage the Intel Data Center GPU driver on RHOCP. The KMM operator can be used to deploy all the necessary driver components as well as the firmware from within the driver container image.</p>
+<p>To install Intel Data Center GPU drivers on OpenShift using the KMM operator, please follow <a class="reference external" href="https://github.com/intel/intel-technology-enabling-for-openshift/tree/main/kmmo#deploy-intel-data-center-gpu-driver-with-pre-build-mode">pre-build mode support</a> from the <a class="reference external" href="https://github.com/intel/intel-technology-enabling-for-openshift">Intel Technology Enabling for OpenShift</a>.</p>
+<p>For users who prefer to create customized driver container images, the on-premises build mode is available as an option. This mode enables users to build and deploy their own container images on their OpenShift cluster.</p>
+</section>
+<section id="upgrade-intel-data-center-gpu-driver-with-rhocp">
+<h2>Upgrade Intel Data Center GPU Driver with RHOCP<a class="headerlink" href="#upgrade-intel-data-center-gpu-driver-with-rhocp" title="Permalink to this heading"></a></h2>
+<p>Upgrading of the Intel Data Center GPU drivers are supported via two scenarios:</p>
+<ul class="simple">
+<li><p><strong>Driver Upgrade Scenario</strong>: This scenario is used when there is a new release from the Intel GPU Driver Repository. After the evaluation, a corresponding Intel Data Center GPU Driver container image will be built, certified, and published on the Red Hat Container Catalog. Users can make use of the KMM Operator to upgrade Intel data center GPU driver with RHOCP.<br />
+<strong>Notes:</strong> The seamless upgrade feature is still under development in Kernel Module Management project.</p></li>
+<li><p><strong>Kernel Upgrade Scenario</strong>: To ensure compatibility with each new Red Hat CoreOS (RHCOS) kernel used by RHOCP, the Intel GPU driver container images are re-built with the corresponding kernel version. This image is certified and then published on the Red Hat Container Catalog. KMM Operator can be used to deploy the driver container image matching the new RHCOS kernel version when upgrading the RHOCP cluster.</p></li>
+</ul>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this heading"></a></h2>
+<p>If users encounter any issues or have questions regarding Intel Data Center GPU Driver with RHOCP, we recommend them to seek support through the following channels:</p>
+<section id="commercial-support-from-red-hat">
+<h3>Commercial Support from Red Hat<a class="headerlink" href="#commercial-support-from-red-hat" title="Permalink to this heading"></a></h3>
+<p>This project facilitates provisioning pre-built Intel Data Center GPU drivers with <a class="reference external" href="https://github.com/intel/intel-technology-enabling-for-openshift">Intel Technology Enabling for OpenShift</a> project, which are then certified and published in the Red Hat Container Catalog. Commercial RHOCP release support is outlined in the <a class="reference external" href="https://access.redhat.com/support/policy/updates/openshift">Red Hat OpenShift Container Platform Life Cycle Policy</a> and Intel collaborates with Red Hat to address specific requirements from our users.</p>
+</section>
+<section id="open-source-community-support">
+<h3>Open-Source Community Support<a class="headerlink" href="#open-source-community-support" title="Permalink to this heading"></a></h3>
+<p>Intel Data Center GPU Drivers for OpenShift is run as an open-source project on GitHub. Project GitHub <a class="reference external" href="https://github.com/intel/intel-data-center-gpu-driver-for-openshift/issues">issues</a> related to pre-built and on-premises driver builds can be used as the primary support interface for users to submit feature requests and report issues to the community. Please provide detailed information about your issue and steps to reproduce it, if possible.</p>
+</section>
+</section>
+<section id="contribute">
+<h2>Contribute<a class="headerlink" href="#contribute" title="Permalink to this heading"></a></h2>
+<p>See <a class="reference internal" href="CONTRIBUTING.html"><span class="std std-doc">CONTRIBUTING</span></a> for more information.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h2>
+<p>Distributed under the open source license. See <a class="reference download internal" download="" href="_downloads/61e0bdf7e1b43c5c93d9488b22e04170/LICENSE.txt"><span class="xref download myst">LICENSE</span></a> for more information.</p>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Permalink to this heading"></a></h2>
+<p>To report a potential security vulnerability, please refer to <a class="reference internal" href="security.html"><span class="std std-doc">security.md</span></a> file.</p>
+</section>
+<section id="code-of-conduct">
+<h2>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this heading"></a></h2>
+<p>Intel has adopted the Contributor Covenant as the Code of Conduct for all of its open source projects. See <a class="reference internal" href="CODE_OF_CONDUCT.html"><span class="std std-doc">CODE_OF_CONDUCT</span></a> file.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Intel® Data Center GPU Driver for OpenShift*" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="release/README.html" class="btn btn-neutral float-right" title="Release Information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Intel® Corporation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
